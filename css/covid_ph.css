@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+body
+{
+
+ background-color: hsl(60, 100%, 90%);
+ color: #56423c;
+ font-family: "Mulish", sans-serif;
+ margin: 0;
+	
+}
+
+body::-webkit-scrollbar {width: 8px;}
+body::-webkit-scrollbar-track {background-color: #ff9f80;}
+body::-webkit-scrollbar-thumb {background-color: #50c1ff;}
+
+a
+{
+	
+ color: #56423c;
+ text-decoration: none;
+	
+}
+
+ul
+{
+
+ list-style-type: circle;
+
+}
+
+/*Side - Navigation*/
+
+nav
+{
+
+ background-color: #50c1ff;
+ border-right: 1px solid #008cce;
+ box-sizing: border-box;
+ height: 100%;
+ overflow: auto;
+ position: fixed;
+ transition: width 200ms linear;
+ width: 20%;
+
+}
+
+nav h2
+{
+
+ margin: 30px;
+
+}
+
+nav h3, h4
+{
+
+ margin: 0px;
+
+}
+
+nav h4
+{
+
+ transform: scale(100%);
+ transition: transform 100ms linear;
+
+}
+
+nav h4:hover
+{
+
+ transform: scale(105%);
+ transition: transform 150ms linear;
+
+}
+
+nav ul
+{
+
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+
+}
+
+nav li a
+{
+
+ padding: 15px 30px;
+ transition: background 150ms linear;
+
+}
+
+nav li a:hover
+{
+
+ background-color: #008cce;
+ color: hsl(60, 100%, 95%);
+
+}
+
+.centered-nav
+{
+
+ display: block;
+
+}
+
+#bottom-nav
+{
+
+ bottom: 30px;
+ margin-left: 30px;
+ position: absolute;
+
+}
+
+/*Main - Header*/
+
+header
+{
+	
+ background-color: #ff9f80;
+ padding: 15px 0px 15px 0px;
+ text-align: center;
+	
+}
+
+header h1
+{
+
+ font-family: "Poller One", sans-serif;
+ font-size: xx-large;
+ font-weight: 900;
+ letter-spacing: 3px;
+ margin: 0px;
+	
+}
+
+#header-subtitle
+{
+
+ margin: 0px;
+
+}
+
+/*Main - Content*/
+
+section
+{
+
+ float: right;
+ margin-left: 20%;
+ width: 80%;
+
+}
+
+article
+{
+	
+ background-color: #50c1ff;
+ margin: 30px;
+ overflow:auto;
+ padding: 20px;
+	
+}
+
+article h2, h3, p
+{
+
+ margin: 15px 0px 15px 0px;
+
+}
+
+article h2
+{
+
+ text-align: center;
+
+}
+
+.text-beside-image
+{
+
+ box-sizing: border-box;
+ display: inline-block;
+ padding: 10px 10px 10px 0px;
+ width: 70%;
+
+}
+
+figure
+{
+
+ background-color: #008cce;
+ box-sizing: border-box;
+ display: inline-block;
+ margin: 0px;
+ padding: 15px;
+
+}
+
+figure img
+{
+
+ height: auto;
+ width: 100%;
+ transform: scale(100%);
+ transition: transform 100ms linear;
+	
+}
+
+figure img:hover
+{
+
+ transform: scale(105%);
+ transition: transform 150ms linear;
+
+}
+
+figcaption
+{
+
+ color: hsl(60, 100%, 95%);
+ font-size: medium;
+ margin-top: 10px;
+ text-align: center;
+
+}
+
+.single-image
+{
+	
+ float: right;
+ width: 30%;
+ word-wrap: break-word;
+	
+}
+
+#relevant-statistics
+{
+
+ display: flex;
+ flex-basis: 100%;
+
+}
+
+.relevant-statistics-image
+{
+
+ vertical-align: top;
+ width: 33.3%;
+ word-wrap: break-word;
+
+}
+
+.table-of-contents
+{
+
+ margin: auto;
+ margin-top: 30px;
+ width: 45%;
+ word-wrap: break-word;
+
+}
+
+.table-of-contents ul
+{
+
+ font-size: large;
+
+}
+
+.references
+{
+
+ word-wrap: break-word;
+
+}
+
+#references ol > li
+{
+
+ font-size: small;
+
+}
+
+.article-image
+{
+
+ margin-top: 60px;
+
+}
+
+.video-container
+{
+
+ margin: auto;
+ position: relative;
+ width: 65%;
+
+}
+
+.video-container::after
+{
+
+ content: "";
+ display: block;
+ padding-top: 56.25%;
+
+}
+
+.video-container iframe 
+{
+
+ height: 100%;
+ position: absolute;
+ width: 100%;
+
+}
+
+/*Main - Footer*/
+
+footer
+{
+	
+ background-color: #ff9f80;
+ box-sizing: border-box;
+ font-size: x-large;
+ font-weight: 900;
+ padding: 15px 0px 15px 0px;
+ text-align: center;
+ width: 100%;
+	
+}
+
+.socials
+{
+
+ display: flex;
+ justify-content: center; 
+
+}
+
+footer a:nth-of-type(1)
+{
+ 
+ background: url('../images/socials.png') no-repeat -174px -80px;
+ border-radius: 15px;
+ height: 28px;
+ width: 28px;
+
+}
+
+footer a:nth-of-type(2)
+{
+ 
+ background: url('../images/socials.png') no-repeat -377px -80px;
+ border-radius: 15px;
+ height: 28px;
+ width: 28px;
+
+}
+
+footer a:nth-of-type(3)
+{
+ 
+ background: url('../images/socials.png') no-repeat -22px -80px;
+ border-radius: 15px;
+ height: 28px;
+ width: 28px;
+
+}
+
+footer a:hover
+{
+
+ transform: scale(90%);
+
+}
+
+@media (max-width: 760px)
+{
+ 
+ nav
+ {
+ 
+  width: 35%;
+ 
+ }
+ 
+ section
+ {
+ 
+  margin-left: 35%;
+  width: 65%;
+ 
+ }
+
+}
+
+@media (max-height: 555px)
+{
+
+ #bottom-nav
+ {
+ 
+  position: initial;
+ 
+ }
+
+}
